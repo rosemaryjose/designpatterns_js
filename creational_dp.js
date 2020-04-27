@@ -22,14 +22,14 @@ class Employee extends Shopper {
         Employee.instance = this;
     }
 }
-class PersonFactory{
-     createPerson(type){
-  	switch(type){
-    		case 'shopper':
-      			return new Shopper('Alex Banks',100)
-    		case 'employee':
-      			return new Employee('Eve Porcello',100)
-    		}
+class PersonFactory {
+    createPerson(type) {
+        switch(type) {
+            case 'shopper':
+                return new Shopper('Alex Banks',100)
+            case 'employee':
+                return new Employee('Eve Porcello',100)
+        }
   	}
 }
 const factory = new PersonFactory();
